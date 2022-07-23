@@ -11,6 +11,7 @@ Trem::Trem(int x, int y,int altura,int largura, int alturaLinha, int larguraLinh
     this->xinicial = xincial;
     this->yinicial = yincial;
 
+
 }
 
 void Trem::setVelocidade(int velocidade)
@@ -31,7 +32,7 @@ void Trem::movimentar()
         // se move para baixo
     }
 
-    else if(this->x < this->xinicial+this->largura/2 && this->y > this->yinicial){
+    else if(this->x < this->xinicial && this->y > this->yinicial){
         this->y -= this->velocidade;
         // se move para cima
     }
@@ -43,3 +44,4 @@ void Trem::movimentar()
 
 
 }
+

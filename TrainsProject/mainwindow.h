@@ -14,10 +14,15 @@ class MainWindow : public QMainWindow
 public:
     MainWindow(QWidget *parent = nullptr);
     void paintEvent(QPaintEvent *event);
+    void delay();
     ~MainWindow();
 
 public slots:
     void movimentar();
+    void velocidade1(int v1);
+    void velocidade2(int v2);
+    void velocidade3(int v3);
+    void velocidade4(int v4);
 private:
     Ui::MainWindow *ui;
 };

@@ -2,6 +2,7 @@
 #include "trem.h"
 #include <QApplication>
 #include <qdebug.h>
+#include <QThread>
 
 int main(int argc, char *argv[])
 {
@@ -9,12 +10,7 @@ int main(int argc, char *argv[])
     MainWindow w;
     w.show();
 
-    int i = 0;
-    while(i<1000000){
-       qDebug()<<1;
-       i++;
-       qDebug()<<i;
-    }
+
 
     return a.exec();
 }
